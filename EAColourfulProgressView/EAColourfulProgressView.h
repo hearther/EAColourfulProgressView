@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 xpto. All rights reserved.
 //
 
-@import UIKit;
+#import <UIKit/UIKit.h>
 
 typedef NS_ENUM(NSInteger, EAColourfulProgressViewType) {
   EAColourfulProgressViewType0to33 = 33,
