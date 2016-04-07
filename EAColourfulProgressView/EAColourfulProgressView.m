@@ -32,6 +32,13 @@ static NSUInteger const EAColourfulProgressViewNumberOfSegments = 3;
   [self setupView];
 }
 
+- (void)layoutSubviews{
+    [super layoutSubviews];
+    CGFloat borders = 2 * self.borderLineWidth;
+    CGFloat width = ceilf((self.backgroundView.bounds.size.width - borders) * self.fractionLeft);
+    
+    self.fillingWidthConstraint.constant = width;
+}
 
 #pragma mark - IB Live Rendering Preparation
 
